@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-storage-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="#">
+    <title>Boulder Builder</title>
+</head>
+<body>
+
+    <!--<button id="add-button"> Save svg to database </button>-->
+    <h1> Boulder Builder </h1>
+
+    <button id="sign-in-button"> Sign In </button>
+
+    <h3> Add a route: </h3>
+
+    <button id="start-route-button"> Start route </button>
+    <input type="text" id="route-name" placeholder="add route name">
+    <input type="text" id="difficulty" placeholder="add difficulty">
+    <button id="create-route-button"> Save route </button>
+    <p id="word-box"> Route not started...</p>
+    
+    <h3> Search for a route by name:</h3>
+    <input type="text" id="search-node-id" placeholder="name">
+    <button id="search-button"> Search </button>
+    
+    <p id="route-name-text"></p>
+    <p id="route-author"></p>
+
+    <h3> Search for a route by difficulty:</h3>
+    <input type="text" id="search-route-diff" placeholder="difficulty">
+    <button id="search-diff-button"> Search </button>
+    <button id="next-route-button"> Next </button>
+    <button id="previous-route-button"> Previous </button>
+    <p id="curr-route-text"></p>
+
+    <button id="reset-button"> Reset Page</button>
+
+
+    <br></br>
+    <p id="x-val"></p>
+    <p id="y-val"></p>
+
+    <!--<canvas id="myCanvas" width="750" height="950"></canvas> -->
+    <img src="wall.jpg" id="image" width = "701pt" height = "946.66pt">
+    <div id='test1'>
+        <object style="pointer-events: none;" id="svg-object" data ="nodes-final.svg" type="image/svg+xml"></object>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script> 
+</body>
+
+
+</html>
